@@ -1,45 +1,30 @@
-const annButton = document.getElementsByClassName("annButton");
-const monButton = document.getElementsByClassName("monButton");
+function onClick(element) {
+  [...document.getElementsByClassName("button")].forEach((el) =>
+    el.classList.remove("current")
+  );
 
-let annButtonChecker = 1;
-let monButtonChecker = 0;
+  element.classList.add("current");
+  console.log(
+    [...document.getElementsByClassName("button current")][0].textContent
+  );
+  if (
+    [...document.getElementsByClassName("button current")][0].textContent ===
+    "Annually"
+  ) {
+    [...document.getElementsByClassName("planPricePro")][0].textContent =
+      "499/year";
+    [...document.getElementsByClassName("planPriceBuss")][0].textContent =
+      "944/year";
+  }
 
-if (annButtonChecker > 0) {
-  annButton.style.backgroundColor = "rgb(255, 255, 255)";
-  monButton.style.backgroundColor = "rgb(189, 245, 255)";
+  if (
+    [
+      ...document.getElementsByClassName("button current"),
+    ][0].textContent.trim() === "Monthly"
+  ) {
+    [...document.getElementsByClassName("planPricePro")][0].textContent =
+      "49/year";
+    [...document.getElementsByClassName("planPriceBuss")][0].textContent =
+      "99/year";
+  }
 }
-
-if (monButtonChecker > 0) {
-  annButton.style.backgroundColor = "rgb(189, 245, 255)";
-  monButton.style.backgroundColor = "rgb(255, 255, 255)";
-}
-
-monButton.addEventListener("mouseenter", function () {
-  if (annButtonChecker > 0) {
-    monButton.style.backgroundColor = "rgb(152, 198, 206)";
-  }
-});
-
-monButton.addEventListener("click", function () {
-  if (annButtonChecker > 0) {
-    annButtonChecker = 0;
-    monButtonChecker = 1;
-
-    monButton.style.backgroundColor = "rgb(189, 245, 255)";
-  }
-});
-
-annButton.addEventListener("mouseenter", function () {
-  if (monButtonChecker > 0) {
-    annButton.style.backgroundColor = "rgb(152, 198, 206)";
-  }
-});
-
-annButton.addEventListener("click", function () {
-  if (monButtonChecker > 0) {
-    annButtonChecker = 1;
-    monButtonChecker = 0;
-
-    annButton.style.backgroundColor = "rgb(189, 245, 255)";
-  }
-});
