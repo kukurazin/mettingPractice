@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@font-face {
-  font-family: metropolitano;
-  src: url("/fonts/metropolitano/Metropolitano-Regular.ttf");
+* {
+  box-sizing: content-box;
 }
+
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -99,20 +103,20 @@ header {
   display: flex;
   position: relative;
   justify-content: left;
-  margin-bottom: 220px;
+  margin-bottom: 120px;
   margin-left: 15%;
   margin-right: 11%;
 }
 
 .groupText {
   font-family: Inter;
-  width: 40%;
+  width: 45%;
   margin-top: 7%;
   margin-bottom: 13%;
 }
 
 .groupHOne {
-  font-size: 30px;
+  font-size: 38px;
   color: rgb(0, 0, 88);
   margin-bottom: 30px;
 }
@@ -133,7 +137,7 @@ header {
 .feedbackContainer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   margin-left: 15%;
   margin-right: 11%;
 }
@@ -187,6 +191,173 @@ header {
   margin-left: 15%;
   margin-right: 11%;
   justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.subContainersMain {
+  margin-left: 15%;
+  margin-right: 11%;
+  font-family: Inter;
+}
+
+.centeredText {
+  margin-left: 15%;
+  margin-right: 11%;
+  font-family: Inter;
+  text-align: center;
+  padding: 0 20%;
+  margin-bottom: 60px;
+}
+
+.subContainersMain {
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  color: rgb(0, 0, 88);
+  padding-bottom: 120px;
+}
+
+.learnFeatures {
+  font-weight: bold;
+}
+
+.insideIntegrationMain {
+  margin-left: 15%;
+  margin-right: 11%;
+  font-family: Inter;
+  display: flex;
+  background: none;
+  height: 550px;
+}
+
+.outsideIntegration {
+  position: relative;
+  background-color: rgb(215, 251, 255);
+  display: flex;
+  height: 550px;
+  margin-bottom: 120px;
+}
+
+.integrationPic {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+
+.secGroupText {
+  width: 40%;
+  padding-top: 10%;
+}
+
+.startIntegration {
+  background-color: #005FEC;
+  color: rgb(255, 255, 255);
+  padding: 18px;
+  border-radius: 5px;
+}
+
+.communicationMain {
+  margin-left: 15%;
+  margin-right: 11%;
+  font-family: Inter;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.communicationText {
+  font-family: Inter;
+  color: rgb(0, 0, 80);
+  padding-left: 5%;
+  width: 50%;
+}
+
+.communicationList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 10%;
+}
+
+.communicationLink {
+  background: #005FEC;
+  padding: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.commLi {
+  margin-bottom: 20px;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+.commLiImg {
+  margin-right: 3%;
+}
+
+.picsMain {
+  position: relative;
+  display: flex;
+  width: 40%;
+}
+
+.commPic1 {
+  position: absolute;
+  bottom: 0%;
+  padding-left: 0%;
+  z-index: 2;
+}
+
+.commPic2 {
+  position: absolute;
+  bottom: -8%;
+  left: -8%;
+  z-index: 1;
+}
+
+.commPic3 {
+  position: absolute;
+  bottom: -14%;
+  right: -14%;
+  padding: 0;
+  z-index: 3;
+}
+
+.buttonsPaymentMain {
+  display: flex;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 11%;
+}
+
+.buttonsPayment {
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+  background: rgb(189, 245, 255);
+  width: 22%;
+  border-radius: 8px;
+}
+
+.annButton {
+  font-size: 22px;
+  padding: 15px;
+  margin: 8px;
+  margin-right: 0;
+  border-radius: 8px;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+
+.monButton {
+  font-size: 22px;
+  padding: 15px;
+  margin: 8px;
+  margin-left: 0;
+  border-radius: 8px;
+  border: none;
+  background: rgb(189, 245, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
