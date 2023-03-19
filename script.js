@@ -12,9 +12,9 @@ function onClick(element) {
     "Annually"
   ) {
     [...document.getElementsByClassName("planPricePro")][0].textContent =
-      "499/year";
+      "$499/year";
     [...document.getElementsByClassName("planPriceBuss")][0].textContent =
-      "944/year";
+      "$944/year";
   }
 
   if (
@@ -23,8 +23,8 @@ function onClick(element) {
     ][0].textContent.trim() === "Monthly"
   ) {
     [...document.getElementsByClassName("planPricePro")][0].textContent =
-      "49/year";
+      "$49/mo";
     [...document.getElementsByClassName("planPriceBuss")][0].textContent =
-      "99/year";
+      "$99/mo";
   }
 }
