@@ -11,10 +11,21 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 3%;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgb(0, 0, 88);
+  z-index: 4;
 }
 
 .logo {
@@ -98,9 +109,20 @@ header {
   margin-right: 80px;
 }
 
-.groupImage {
-  position: absolute;
-  right: 0%;
+#homeAnchor {
+  scroll-margin-top: 136px;
+}
+
+#featureAnchor {
+  scroll-margin-top: 136px;
+}
+
+#pricingAnchor {
+  scroll-margin-top: 136px;
+}
+
+#solutionAnchor {
+  scroll-margin-top: 110px;
 }
 
 .groupContainer {
@@ -110,6 +132,12 @@ header {
   margin-bottom: 120px;
   margin-left: 15%;
   margin-right: 11%;
+  margin-top: 10%;
+}
+
+.groupImage {
+  position: absolute;
+  right: 0%;
 }
 
 .groupText {
